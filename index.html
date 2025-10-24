@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>University of Chicago HTTP Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>University of Chicago: HTTP is Unencrypted</h1>
+  <p>This page is served over plain HTTP to demonstrate its vulnerabilities for a network security assignment.</p>
+
+  <h2>About the University of Chicago</h2>
+  <p>The University of Chicago, founded in 1890, is a private research university located in Chicago, Illinois. Known for its rigorous academic programs and intellectual culture, it has produced 100 Nobel laureates, including 32 in economics. The university’s campus in Hyde Park features iconic Gothic architecture, such as Rockefeller Chapel, and houses renowned programs like the Chicago Booth School of Business and the Pritzker School of Medicine.</p>
+  <p>Notable alumni include Barack Obama, Milton Friedman, and Susan Sontag. The university is also home to the Oriental Institute, a leading center for ancient Near Eastern studies, and the Fermilab, a key particle physics laboratory. Its motto, <em>Crescat scientia; vita excolatur</em> ("Let knowledge grow; let life be enriched"), reflects its commitment to inquiry and impact.</p>
+
+  <h3>Campus Highlights</h3>
+  <ul>
+    <li><strong>Midway Plaisance</strong>: A historic park connecting campus to Washington Park, used for events and recreation.</li>
+    <li><strong>Hutchinson Commons</strong>: A central dining hall inspired by Oxford’s Christ Church Hall.</li>
+    <li><strong>Regenstein Library</strong>: One of the largest research libraries, housing over 4.5 million volumes.</li>
+  </ul>
+
+  <h3>Images</h3>
+  <img src="sample.jpg" alt="University of Chicago Campus" width="300">
+  <img src="another_image.jpg" alt="Rockefeller Chapel" width="300">
+
+  <h3>Test HTTP Vulnerability</h3>
+  <form action="/submit" method="post" id="dataForm">
+    <label>Data: <input type="text" name="data" value="test_data"></label>
+    <button type="submit">Test POST</button>
+  </form>
+  <div id="postOutput"></div>
+
+</body>
+</html>
